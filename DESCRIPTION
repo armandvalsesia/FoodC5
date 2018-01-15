@@ -1,0 +1,22 @@
+Package: FoodC5
+Type: Package
+Title: C5.0 classifier for Food Items Mapping
+Version: 1.0.0
+Date: 2011-06-08
+Authors@R: c(person("Armand", "Valsesia", role = "aut",
+    email = "Armand.Valsesia@rd.nestle.com"),
+    person("Marc", "Lamarine", role = c("aut", "cre"),
+    email = "marc.lamarine@quartz.bio"))
+Description: Compute probability that two matching items are similar. This is made using precomputed C5.0 trees.
+License: GPL-3
+Depends: R (>= 3.3.2)
+Imports: C50
+Suggests: caret, devtools, knitr, pander, testthat
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr
+LazyData: yes
+NeedsCompilation: no
+Packaged: 2017-12-19 12:27:46 UTC; docker
+Author: Armand Valsesia [aut],
+  Marc Lamarine [aut, cre]
+Maintainer: Armand Valsesia <armand.valsesia@rd.nestle.com>

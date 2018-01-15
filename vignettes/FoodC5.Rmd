@@ -1,0 +1,50 @@
+---
+title: "FoodC5 Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FoodC5}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, echo = TRUE, include = FALSE}
+library(C50)
+library(pander)
+library(FoodC5)
+```
+
+
+## Retrieve fuzzy scores and predict mapping using a pre-trained model
+
+
+Retrieve pre-computed fuzzy scores for English food names and use a pre-trained C5.0 model to
+classify results as good or bad matches.
+Fuzzy matching scores can be computed using the Foodmapping R package.
+
+```{r , echo = TRUE}
+data(food_score)
+preds <- c5_one_language(food_score,  'ENG_SCORE', 'EDIFF')
+pander(head(preds), split.table = Inf )
+```
+
+The same approach can also be made, using a comparison of the original food
+name. 
+
+```{r , echo = TRUE}
+preds <- c5_one_language(food_score,  'ORI_SCORE', 'EDIFF', c5_object = read_c50_ori() ) 
+pander(head(preds), split.table = Inf )
+```
+
+
+## Explore the C5.0 tree 
+
+Summary of the defaut English Based C5.O tree
+
+```{r , echo = TRUE}
+eng_tree <- read_c50_eng()
+summary(eng_tree)
+```
+
+
+
+
