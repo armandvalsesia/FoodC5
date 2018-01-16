@@ -6,8 +6,11 @@ R package to derive probability that any two food items are the same
 **FoodC5** is an R package providing an interface to a pre-trained C5.0 classification model.
 This C5.0 tree enable to predict whether any two food items are the same. It requires the following input parameters:
 
-* the similary between the two food names (can be computed with the [Foodmapping R package](https://github.com/armandvalsesia/Foodmapping))
-* information on how much the two items differ in energy content (expressed as a percentage - see below)
+* fuzzy score: similary between the two food names 
+* information on how much the two items differ in energy content
+
+The fuzzy score can be computed with with the [Foodmapping R package](https://github.com/armandvalsesia/Foodmapping).
+The difference in energy content can be expressed as 100 * abs( itemA_energy_content - itemB_energy_content ) / itemA_energy_content.
 
 ## Installation
 
@@ -17,13 +20,26 @@ To install, run the following commands in R:
 install.packages("devtools")
 devtools::install_github("armandvalsesia/FoodC5")
 ```
+## Quick Start
 
+
+``` r
+require("FoodC5")
+
+# load example dataset
+data(food_score)
+
+# Compute probability based on a comparison using the English-translated food names
+preds <- c5_one_language(food_score,  'ENG_SCORE', 'EDIFF')
+
+
+# Compute probability based on a comparison using the original food names
+# this model is trained for the following languages: English, Dutch, Danish, and a modest subset for Greek, Spanish and Bulgarian.  
+preds <- c5_one_language(food_score,  'ENG_SCORE', 'EDIFF', c5_object = read_c50_ori())
+
+```
 
 ## License and authors
 
 This software uses the GPL v3 license, see [LICENSE](LICENSE).
 Authors and copyright are provided in [DESCRIPTION](DESCRIPTION). 
-
-## Issues
-
-To report an issue, please use the [locus issue tracker](https://github.com/hruffieux/locus/issues) at github.com.
