@@ -1,2 +1,2 @@
 library(testthat)
-test_check('eurofirC5')
+test_check('foodC5')
