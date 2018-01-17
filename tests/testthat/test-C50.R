@@ -5,7 +5,7 @@ context("C50")
 
 
 .c5_predict <- function() {
-  ar_c5 <- eurofirC5:::read_c50_eng()
+  ar_c5 <- foodC5:::read_c50_eng()
   data(food_score)
 
   p <- c5_predict(food_score, 'ENG_SCORE', 'EDIFF', ar_c5)
