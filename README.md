@@ -8,7 +8,7 @@ R package to derive probability that any two food items are the same
 ## Overview
 
 **FoodC5** is an R package providing an interface to a pre-trained C5.0 classification model.
-This C5.0 tree enable to predict whether any two food items are the same. It requires the following input parameters:
+This C5.0 tree enables to predict whether any two food items are the same. It requires the following input parameters:
 
 * fuzzy score: similary between the two food names 
 * information on how much the two items differ in energy content
