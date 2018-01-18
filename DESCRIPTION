@@ -11,7 +11,7 @@ Description: Compute probability that two matching items are similar. This is ma
 License: file LICENSE
 Depends: R (>= 3.3.2)
 Imports: C50
-Suggests: caret, devtools, knitr, pander, testthat, rmarkdown
+Suggests: caret, devtools, knitr, pander, testthat, rmarkdown, covr
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
 LazyData: yes
