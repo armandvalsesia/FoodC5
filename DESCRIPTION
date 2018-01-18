@@ -8,7 +8,7 @@ Authors@R: c(person("Armand", "Valsesia", role = "aut",
     person("Marc", "Lamarine", role = c("aut", "cre"),
     email = "marc.lamarine@quartz.bio"))
 Description: Compute probability that two matching items are similar. This is made using precomputed C5.0 trees.
-License: GPL-3
+License: file LICENSE
 Depends: R (>= 3.3.2)
 Imports: C50
 Suggests: caret, devtools, knitr, pander, testthat, rmarkdown
