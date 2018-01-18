@@ -22,7 +22,8 @@ r_packages:
   - covr
   - knitr
   - rmarkdown
-  
+  - covr
+
 after_success:
   - Rscript -e 'covr::codecov(quiet = FALSE)'
   
