@@ -21,8 +21,9 @@ r_packages:
   - knitr
   - rmarkdown
   
+  
 after_success:
-  - Rscript -e 'covr::codecov(quiet = FALSE)'
+  - Rscript -e 'library(covr); codecov()'
   
 warnings_are_errors: false
 
