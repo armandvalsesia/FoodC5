@@ -3,7 +3,7 @@
 language: r
 pandoc_version: 1.18
 
-sudo: false
+sudo: required
 cache: packages
 
 
