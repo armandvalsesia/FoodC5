@@ -12,8 +12,6 @@ env:
     - R_BUILD_ARGS="--no-build-vignettes --no-manual"
     - R_CHECK_ARGS="--no-build-vignettes --no-manual --as-cran"
     
-
-
 r_packages:
   - devtools
   - roxygen2
@@ -22,8 +20,7 @@ r_packages:
   - covr
   - knitr
   - rmarkdown
-  - covr
-
+  
 after_success:
   - Rscript -e 'covr::codecov(quiet = FALSE)'
   
