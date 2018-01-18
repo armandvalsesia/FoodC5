@@ -47,3 +47,5 @@ preds <- c5_one_language(food_score,  'ENG_SCORE', 'EDIFF', c5_object = read_c50
 
 This software uses the GPL v3 license, see [LICENSE](LICENSE).
 Authors and copyright are provided in [DESCRIPTION](DESCRIPTION). 
+
+Big thanks to [Hélène Ruffieux](https://github.com/hruffieux) and [Radu Popescu](https://github.com/radupopescu) for help with CI.
