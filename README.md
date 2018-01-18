@@ -1,7 +1,6 @@
 [![Travis-CI Build Status](https://travis-ci.org/armandvalsesia/FoodC5.svg?branch=master)](https://travis-ci.org/armandvalsesia/FoodC5)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/armandvalsesia/FoodC5?branch=master&svg=true)](https://ci.appveyor.com/project/armandvalsesia/FoodC5/branch/master)
 [![codecov.io](https://codecov.io/github/armandvalsesia/FoodC5/coverage.svg?branch=master)](https://codecov.io/github/armandvalsesia/FoodC5?branch=master)
-[![codecov](https://codecov.io/gh/armandvalsesia/FoodC5/branch/master/graph/badge.svg)](https://codecov.io/gh/armandvalsesia/FoodC5)
 
 # FoodC5
 R package to derive probability that any two food items are the same
