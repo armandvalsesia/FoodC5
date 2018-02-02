@@ -22,7 +22,7 @@ To install, run the following commands in R:
 
 ``` r
 install.packages("devtools")
-devtools::install_github("armandvalsesia/FoodC5", , build_vignettes = TRUE)
+devtools::install_github("armandvalsesia/FoodC5", build_vignettes = TRUE)
 ```
 ## Quick Start
 
